@@ -10,7 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "[name][contenthash].js",
         clean:true,
-        assetModuleFilename:'[name][ext]',
+        assetModuleFilename: "[name][ext]"
     },
     devServer: {
         static:{
@@ -41,8 +41,8 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)/i,
-                type: 'asset/resource'
+                test:/\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource"
             }
         ],
     },
