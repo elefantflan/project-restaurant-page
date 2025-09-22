@@ -1,6 +1,6 @@
 function getPageAbout(){
     const div = document.createElement('div');
-    div.className="info";
+    div.className="info about";
     const title = document.createElement('h2');
     const info = document.createElement('p');
 
