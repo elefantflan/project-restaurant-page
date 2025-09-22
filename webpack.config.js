@@ -1,10 +1,34 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
     mode: "development",
-    entry: path.resolve(__dirname, "src/index.js"),
+    entry: {
+        build: path.resolve(__dirname, "src/index.js")
+    },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "build.js",
-    }
+        filename: "[name][contenthash].js",
+    },
+    module: {
+        rules: [
+            {test: /\.scss$/i,
+            use: 
+                ['style-loader',
+                'css-loader',
+                'sass-loader',],
+            },
+        ],
+    },
+    plugins:[        
+    new HtmlWebpackPlugin(
+            {
+                title:'Long for Innisfree',
+                filename:'index.html',
+                template: './src/template.html',
+
+            },
+        ),
+    ],
+    
 }
