@@ -32,14 +32,18 @@ function getPageMenu(){
 
     div.append(title);
     div.append(ul);
-    ul.append(lobster);
+
     ul.append(img1);
-    ul.append(oyster);
+    ul.append(lobster);
+
     ul.append(img2);
-    ul.append(sashimi);
+    ul.append(oyster);
+
     ul.append(img3);
-    ul.append(uni);
+    ul.append(sashimi);
+
     ul.append(img4);
+    ul.append(uni);
 
     title.textContent="Menu";
     lobster.textContent="Lobster Bisque - red lobster dripping in butter, garnished with caviar and orchids";
