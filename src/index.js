@@ -2,7 +2,7 @@ require('./styles/main.scss');
 
 import { getPageMenu } from './menu';
 import { getPageHome } from './home';
-import { getPageAbout } from './about';
+import { getPageContact } from './contact';
 
 console.log("This is Michelle. I am creating a restaurant page using webpack.")
 
@@ -24,10 +24,10 @@ function toggleMenu(){
     content.textContent='';
     content.append(getPageMenu());
 }
-function toggleAbout(){
+function toggleContact(){
     //clear content
     content.textContent='';
-    content.append(getPageAbout());
+    content.append(getPageContact());
 }
 
 const home = document.getElementById('home');
@@ -40,7 +40,7 @@ const clickMenu=menu.addEventListener('click', ()=>{
     toggleMenu();
 })
 
-const about = document.getElementById('about');
-const clickAbout=about.addEventListener('click', ()=>{
-    toggleAbout();
+const contact = document.getElementById('contact');
+const clickContact=contact.addEventListener('click', ()=>{
+    toggleContact();
 })
