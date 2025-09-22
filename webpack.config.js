@@ -9,6 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name][contenthash].js",
+        clean:true,
     },
     devServer: {
         static:{
@@ -33,7 +34,7 @@ module.exports = {
     plugins:[        
     new HtmlWebpackPlugin(
             {
-                title:'Long for Innisfree',
+                title:'Innisfree',
                 filename:'index.html',
                 template: './src/template.html',
 
