@@ -44,8 +44,7 @@ function getPageMenu(){
 
     ul.append(img4);
     ul.append(uni);
-
-    title.textContent="Menu";
+    
     lobster.textContent="Lobster Bisque - red lobster dripping in butter, garnished with caviar and orchids";
     oyster.textContent="Aphrodite's Oyster - freshly hauled oysters served with house special dipping sauce and spicy fruit mango";
     sashimi.textContent="Saltwater Sashimi - assortment of ahi tuna belly, yellowtail, albacore, salmon roe, and squid";
